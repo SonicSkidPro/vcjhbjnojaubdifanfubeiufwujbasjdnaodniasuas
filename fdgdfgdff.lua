@@ -123,14 +123,6 @@ function config_main_array:apply(Window, tab)
             Window.pointers["uiinline"]:set(Color3.fromHex("#363636")) -- done
             Window.pointers["uitextcolor"]:set(Color3.fromHex("#d6d9e0")) -- done
             Window.pointers["uitextborder"]:set(Color3.fromRGB(10,10,10))
-        elseif string == "Octohook" then
-            Window.pointers["uiaccentcolor"]:set(Color3.fromHex("#8f4b67")) -- done
-            Window.pointers["uilight"]:set(Color3.fromHex("#171717")) -- done
-            Window.pointers["uidark"]:set(Color3.fromHex("#121112")) -- done
-            Window.pointers["uioutline"]:set(Color3.fromHex("#000000")) -- done
-            Window.pointers["uiinline"]:set(Color3.fromHex("#3c3c3c")) -- done
-            Window.pointers["uitextcolor"]:set(Color3.fromHex("#ffffff")) -- done
-            Window.pointers["uitextborder"]:set(Color3.fromRGB(10,10,10))
         end
     end})
 
