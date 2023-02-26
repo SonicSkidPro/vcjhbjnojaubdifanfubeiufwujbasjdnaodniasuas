@@ -18,7 +18,7 @@ function config_main_array:apply(Window, tab)
     thememisc:Colorpicker({Name = "Inline", Info = "Inline", Default = Color3.fromRGB(50,50,50), Pointer = "uiinline", callback = function(color) Window:UpdateColor("inline", color) end})
     thememisc:Colorpicker({Name = "Text Color", Info = "Text Color", Default = Color3.fromRGB(255,255,255), Pointer = "uitextcolor", callback = function(color) Window:UpdateColor("textcolor", color) end})
     thememisc:Colorpicker({Name = "Text Border", Info = "Text Border", Default = Color3.fromRGB(0,0,0), Pointer = "uitextborder", callback = function(color) Window:UpdateColor("textborder", color) end})
-    thememisc:Dropdown({Name = "Themes", Options = {"Default","Snowy","Salmon","Bitch Bot","Kiriot Hub","Fatality","Red","Tokyo Night","Old Abyss"}, Default = "", callback = function(string) 
+    thememisc:Dropdown({Name = "Themes", Options = {"Default","Snowy","Salmon","Bitch Bot","Kiriot Hub","Fatality","Red","Tokyo Night","Old Abyss","Neverlose"}, Default = "", callback = function(string) 
         if string == "Default" then
             Window.pointers["uiaccentcolor"]:set(Color3.fromRGB(168,122,207))
             Window.pointers["uilight"]:set(Color3.fromRGB(30,30,30))
@@ -91,6 +91,14 @@ function config_main_array:apply(Window, tab)
             Window.pointers["uiinline"]:set(Color3.fromHex("#322850")) -- done
             Window.pointers["uitextcolor"]:set(Color3.fromHex("#ffffff")) -- done
             Window.pointers["uitextborder"]:set(Color3.fromRGB(10,10,10))
+        elseif string == "Neverlose" then
+            Window.pointers["uiaccentcolor"]:set(Color3.fromHex("#00b4f0")) -- 
+            Window.pointers["uilight"]:set(Color3.fromHex("#000f1e")) -- 
+            Window.pointers["uidark"]:set(Color3.fromHex("#050514")) -- 
+            Window.pointers["uioutline"]:set(Color3.fromHex("#000005")) -- 
+            Window.pointers["uiinline"]:set(Color3.fromHex("#0a1e28")) -- 
+            Window.pointers["uitextcolor"]:set(Color3.fromHex("#ffffff")) -- 
+            Window.pointers["uitextborder"]:set(Color3.fromHex("#afafaf"))
         end
     end})
 
