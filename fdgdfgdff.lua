@@ -98,7 +98,7 @@ function config_main_array:apply(Window, tab)
             Window.pointers["uioutline"]:set(Color3.fromHex("#000005")) -- 
             Window.pointers["uiinline"]:set(Color3.fromHex("#0a1e28")) -- 
             Window.pointers["uitextcolor"]:set(Color3.fromHex("#ffffff")) -- 
-            Window.pointers["uitextborder"]:set(Color3.fromHex("#afafaf"))
+            Window.pointers["uitextborder"]:set(Color3.fromRGB(10,10,10))
         end
     end})
 
