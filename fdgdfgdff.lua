@@ -18,7 +18,7 @@ function config_main_array:apply(Window, tab)
     thememisc:Colorpicker({Name = "Inline", Info = "Inline", Default = Color3.fromRGB(50,50,50), Pointer = "uiinline", callback = function(color) Window:UpdateColor("inline", color) end})
     thememisc:Colorpicker({Name = "Text Color", Info = "Text Color", Default = Color3.fromRGB(255,255,255), Pointer = "uitextcolor", callback = function(color) Window:UpdateColor("textcolor", color) end})
     thememisc:Colorpicker({Name = "Text Border", Info = "Text Border", Default = Color3.fromRGB(0,0,0), Pointer = "uitextborder", callback = function(color) Window:UpdateColor("textborder", color) end})
-    thememisc:Dropdown({Name = "Themes", Options = {"Default","Snowy","Salmon","Bitch Bot","Kiriot Hub","Fatality","Red","Tokyo Night","Old Abyss","Onetap","NeverLose"}, Default = "", callback = function(string) 
+    thememisc:Dropdown({Name = "Themes", Options = {"Default","Snowy","Salmon","Bitch Bot","Kiriot Hub","Fatality","Red","Tokyo Night","Old Abyss","Onetap","NeverLose","Gamesense","Vape","Octohook"} Default = "", callback = function(string) 
         if string == "Default" then
             Window.pointers["uiaccentcolor"]:set(Color3.fromRGB(168,122,207))
             Window.pointers["uilight"]:set(Color3.fromRGB(30,30,30))
@@ -105,6 +105,30 @@ function config_main_array:apply(Window, tab)
             Window.pointers["uidark"]:set(Color3.fromHex("#050514")) -- done
             Window.pointers["uioutline"]:set(Color3.fromHex("#000005")) -- done
             Window.pointers["uiinline"]:set(Color3.fromHex("#0a1e28")) -- done
+            Window.pointers["uitextcolor"]:set(Color3.fromHex("#ffffff")) -- done
+            Window.pointers["uitextborder"]:set(Color3.fromRGB(10,10,10))
+        elseif string == "Gamesense" then
+            Window.pointers["uiaccentcolor"]:set(Color3.fromHex("#a7d94d")) -- done
+            Window.pointers["uilight"]:set(Color3.fromHex("#171717")) -- done
+            Window.pointers["uidark"]:set(Color3.fromHex("#0c0c0c")) -- done
+            Window.pointers["uioutline"]:set(Color3.fromHex("#000000")) -- done
+            Window.pointers["uiinline"]:set(Color3.fromHex("#4e5158")) -- done
+            Window.pointers["uitextcolor"]:set(Color3.fromHex("#ffffff")) -- done
+            Window.pointers["uitextborder"]:set(Color3.fromRGB(10,10,10))
+        elseif string == "Vape" then
+            Window.pointers["uiaccentcolor"]:set(Color3.fromHex("#26866a")) -- done
+            Window.pointers["uilight"]:set(Color3.fromHex("#1f1f1f")) -- done
+            Window.pointers["uidark"]:set(Color3.fromHex("#1a1a1a")) -- done
+            Window.pointers["uioutline"]:set(Color3.fromHex("#0a0a0a")) -- done
+            Window.pointers["uiinline"]:set(Color3.fromHex("#363636")) -- done
+            Window.pointers["uitextcolor"]:set(Color3.fromHex("#d6d9e0")) -- done
+            Window.pointers["uitextborder"]:set(Color3.fromRGB(10,10,10))
+        elseif string == "Octohook" then
+            Window.pointers["uiaccentcolor"]:set(Color3.fromHex("#8f4b67")) -- done
+            Window.pointers["uilight"]:set(Color3.fromHex("#171717")) -- done
+            Window.pointers["uidark"]:set(Color3.fromHex("#121112")) -- done
+            Window.pointers["uioutline"]:set(Color3.fromHex("#000000")) -- done
+            Window.pointers["uiinline"]:set(Color3.fromHex("#3c3c3c")) -- done
             Window.pointers["uitextcolor"]:set(Color3.fromHex("#ffffff")) -- done
             Window.pointers["uitextborder"]:set(Color3.fromRGB(10,10,10))
         end
