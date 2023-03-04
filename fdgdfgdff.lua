@@ -18,7 +18,7 @@ function config_main_array:apply(Window, tab)
     thememisc:Colorpicker({Name = "Inline", Info = "Inline", Default = Color3.fromRGB(50,50,50), Pointer = "uiinline", callback = function(color) Window:UpdateColor("inline", color) end})
     thememisc:Colorpicker({Name = "Text Color", Info = "Text Color", Default = Color3.fromRGB(255,255,255), Pointer = "uitextcolor", callback = function(color) Window:UpdateColor("textcolor", color) end})
     thememisc:Colorpicker({Name = "Text Border", Info = "Text Border", Default = Color3.fromRGB(0,0,0), Pointer = "uitextborder", callback = function(color) Window:UpdateColor("textborder", color) end})
-    thememisc:Dropdown({Name = "Themes", Options = {"Default","Snowy","Salmon","Bitch Bot","Kiriot Hub","Fatality","Red","Tokyo Night","Old Abyss","Onetap","NeverLose","Gamesense","Vape"}, Default = "", callback = function(string) 
+    thememisc:Dropdown({Name = "Themes", Options = {"Default","Snowy","Salmon","Bitch Bot","Kiriot Hub","Fatality","Red","Tokyo Night","Old Abyss","Onetap","NeverLose","Gamesense","Vape","Spotify","Zeebot v2","LegitSneeze","Abyss V2"}, Default = "", callback = function(string) 
         if string == "Default" then
             Window.pointers["uiaccentcolor"]:set(Color3.fromRGB(168,122,207))
             Window.pointers["uilight"]:set(Color3.fromRGB(30,30,30))
@@ -121,6 +121,38 @@ function config_main_array:apply(Window, tab)
             Window.pointers["uidark"]:set(Color3.fromHex("#1a1a1a")) -- done
             Window.pointers["uioutline"]:set(Color3.fromHex("#0a0a0a")) -- done
             Window.pointers["uiinline"]:set(Color3.fromHex("#363636")) -- done
+            Window.pointers["uitextcolor"]:set(Color3.fromHex("#d6d9e0")) -- done
+            Window.pointers["uitextborder"]:set(Color3.fromRGB(10,10,10))
+        elseif string == "Spotify" then
+            Window.pointers["uiaccentcolor"]:set(Color3.fromRGB(103, 212, 91)) -- done
+            Window.pointers["uilight"]:set(Color3.fromRGB(30, 30, 30)) -- done
+            Window.pointers["uidark"]:set(Color3.fromRGB(25, 25, 25)) -- done
+            Window.pointers["uioutline"]:set(Color3.fromRGB(0, 0, 0)) -- done
+            Window.pointers["uiinline"]:set(Color3.fromRGB(46, 46, 46)) -- done
+            Window.pointers["uitextcolor"]:set(Color3.fromHex("#d6d9e0")) -- done
+            Window.pointers["uitextborder"]:set(Color3.fromRGB(10,10,10))
+        elseif string == "Zeebot v2" then
+            Window.pointers["uiaccentcolor"]:set(Color3.fromRGB(117,96,175)) -- done
+            Window.pointers["uilight"]:set(Color3.fromRGB(51,51,51)) -- done
+            Window.pointers["uidark"]:set(Color3.fromRGB(41,41,41)) -- done
+            Window.pointers["uioutline"]:set(Color3.fromRGB(37, 37, 37)) -- done
+            Window.pointers["uiinline"]:set(Color3.fromRGB(39, 39, 39)) -- done
+            Window.pointers["uitextcolor"]:set(Color3.fromHex("#d6d9e0")) -- done
+            Window.pointers["uitextborder"]:set(Color3.fromRGB(10,10,10))
+        elseif string == "LegitSneeze" then
+            Window.pointers["uiaccentcolor"]:set(Color3.fromRGB(135,206,250)) -- done
+            Window.pointers["uilight"]:set(Color3.fromRGB(43,41,48)) -- done
+            Window.pointers["uidark"]:set(Color3.fromRGB(44,41,48)) -- done
+            Window.pointers["uioutline"]:set(Color3.fromRGB(37, 37, 37)) -- done
+            Window.pointers["uiinline"]:set(Color3.fromRGB(50,50,50)) -- done
+            Window.pointers["uitextcolor"]:set(Color3.fromHex("#d6d9e0")) -- done
+            Window.pointers["uitextborder"]:set(Color3.fromRGB(10,10,10))
+        elseif string == "Abyss V2" then
+            Window.pointers["uiaccentcolor"]:set(Color3.fromRGB(161, 144, 219)) -- done
+            Window.pointers["uilight"]:set(Color3.fromRGB(27, 27, 27)) -- done
+            Window.pointers["uidark"]:set(Color3.fromRGB(18, 18, 18)) -- done
+            Window.pointers["uioutline"]:set(Color3.fromRGB(0, 0, 0)) -- done
+            Window.pointers["uiinline"]:set(Color3.fromRGB(50, 50, 50)) -- done
             Window.pointers["uitextcolor"]:set(Color3.fromHex("#d6d9e0")) -- done
             Window.pointers["uitextborder"]:set(Color3.fromRGB(10,10,10))
         end
