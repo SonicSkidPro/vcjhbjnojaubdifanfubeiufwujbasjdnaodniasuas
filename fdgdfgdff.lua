@@ -1,11 +1,9 @@
 local config_main_array = {}
 
-getgenv().UiSettings = {
-    RainbowAccent = false,
-}
+getgenv().RainbowAccent = false
 
 function updateuicolor()
-        if getgenv().UiSettings.RainbowAccent == true then
+        if getgenv().RainbowAccent == true then
         Window.pointers["uiaccentcolor"]:set(Color3.fromHSV(tick()%5/5,1,1))
        else
         Window.pointers["uiaccentcolor"]:set(Color3.fromRGB(168,122,207))
