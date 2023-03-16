@@ -1,5 +1,3 @@
-local config_main_array = {}
-
 getgenv().RainbowAccent = false
 
 function updateuicolor()
@@ -10,6 +8,11 @@ function updateuicolor()
     end
 
 updateuicolor()
+
+
+
+
+local config_main_array = {}
 
 function config_main_array:apply(Window, tab)
     local unloadmisc = tab:Section({Name = "[-] Unload", Side = "Left"})
