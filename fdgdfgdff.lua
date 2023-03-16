@@ -1,13 +1,4 @@
-getgenv().RainbowAccent = false
 
-function updateuicolor()
-        if getgenv().RainbowAccent == true then
-        Window.pointers["uiaccentcolor"]:set(Color3.fromHSV(tick()%5/5,1,1))
-       else
-        Window.pointers["uiaccentcolor"]:set(Color3.fromRGB(168,122,207))
-    end
-
-updateuicolor()
 
 
 
@@ -171,10 +162,7 @@ function config_main_array:apply(Window, tab)
             Window.pointers["uitextborder"]:set(Color3.fromRGB(10,10,10))
         end
     end})
-    
- thememisc:Toggle({Name = "Rainbow Accent", Default = false, Pointer = "SilentAim", callback = function(x)
-    getgenv().RainbowAccent = x
-end})
+
 
     local config_main = {
         selected = "Main",
