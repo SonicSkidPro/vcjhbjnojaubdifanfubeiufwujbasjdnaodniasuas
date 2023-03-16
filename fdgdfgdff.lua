@@ -170,7 +170,7 @@ function config_main_array:apply(Window, tab)
     end})
     
  thememisc:Toggle({Name = "Rainbow Accent", Default = false, Pointer = "SilentAim", callback = function(x)
-    getgenv().UiSettings.RainbowAccent = x
+    getgenv().RainbowAccent = x
 end})
 
     local config_main = {
