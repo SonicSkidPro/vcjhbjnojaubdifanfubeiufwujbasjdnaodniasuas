@@ -1,7 +1,7 @@
 local config_main_array = {}
 
 getgenv().UiSettings = {
-    RainbowAccent = false
+    RainbowAccent = false,
 }
 
 function updateuicolor()
