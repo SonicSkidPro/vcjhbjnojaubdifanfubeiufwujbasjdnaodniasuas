@@ -1,6 +1,19 @@
 local config_main_array = {}
 
+getgenv().UiSettings = {
+    RainbowAccent = false
+}
+
+function updateuicolor()
+        if getgenv().UiSettings.RainbowAccent == true then
+        Window.pointers["uiaccentcolor"]:set(Color3.fromHSV(tick()%5/5,1,1))
+       else
+        Window.pointers["uiaccentcolor"]:set(Color3.fromRGB(168,122,207))
+    end
+
+
 function config_main_array:apply(Window, tab)
+    updateuicolor()
     local unloadmisc = tab:Section({Name = "[-] Unload", Side = "Left"})
     local uimisc = tab:Section({Name = "[-] UI", Side = "Left"})
     local thememisc = tab:Section({Name = "[-] Theme", Side = "Left"})
@@ -159,13 +172,7 @@ function config_main_array:apply(Window, tab)
     end})
     
  thememisc:Toggle({Name = "Rainbow Accent", Default = false, Pointer = "SilentAim", callback = function(x)
-    getgenv().RainbowAccent = x
-                
-    if getgenv().RainbowAccent == true then
-        Window.pointers["uiaccentcolor"]:set(Color3.fromHSV(tick()%5/5,1,1))
-       else
-        Window.pointers["uiaccentcolor"]:set(Color3.fromRGB(168,122,207))
-    end
+    getgenv().UiSettings.RainbowAccent = x
 end})
 
     local config_main = {
